@@ -11,9 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-/**
- * Created by Administrator on 2017/12/22.
- */
 
 public class ServiceActivity extends AppCompatActivity implements View.OnClickListener {
 
