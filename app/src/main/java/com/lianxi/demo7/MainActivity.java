@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Intent intent;
 
-    private Button bt1,bt2,bt3,bt4,bt5;
+    private Button bt1,bt2,bt3,bt4,bt5,bt6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +31,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt3 = (Button) findViewById(R.id.bt3);
         bt4 = (Button) findViewById(R.id.bt4);
         bt5 = (Button) findViewById(R.id.bt5);
+        bt6 = (Button) findViewById(R.id.bt6);
 
         bt1.setOnClickListener(this);
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
         bt4.setOnClickListener(this);
         bt5.setOnClickListener(this);
+        bt6.setOnClickListener(this);
 
 //        FragmentManager fragmentManager = getSupportFragmentManager();
 //        Fragment fragment = fragmentManager.findFragmentById(R.id.frament);
@@ -73,6 +75,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt5:
                 intent = new Intent(MainActivity.this,ServiceActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.bt6:
+                intent = new Intent(MainActivity.this,EventBusActivity.class);
                 startActivity(intent);
                 break;
         }
